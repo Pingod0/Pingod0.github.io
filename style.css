@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+     /* Para eliminar viñetas de una lista */
+    list-style: none;
+    /* Para eliminar los subrayados de un "href"*/
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* Inicio de mi Menu */
+.menu{
+    width: 100%;
+    float: left;
+    text-align: right;
+    /* Fondo del menu */
+    background-color: #ed3e12;
+    padding: 1rem;
+}
+.menu ul li{
+    /* Para alinear en una sola linea mis <li> */
+    display: inline-block;
+    text-align: left;
+    /* Tamaño para mi Logo */
+    font-size: 25px;
+   /*  Grosor para mi Logo */
+    font-weight: 800;
+}
+.menu ul li a{
+    margin: 10px 10px;
+    padding: 10px 12px;
+    /*  Grosor para mi Inicio, Perros, etc */
+    font-weight: 600;
+    /* Tamaño para mi Incio, Perros, etc */
+    font-size: 18px;
+    color: black;
+}
+/* Fin de mi Menu */
+
+/* Incio de slider con html y css */
+.slider-frame{
+    width: 100%;
+    margin: auto;
+    height:auto;
+    /* Oculta todas las imagenes fuera de mi caja */
+    overflow: hidden;
+    /* animation: slide 15s infinite alternate ease-in-out; */
+}
+
+.slider-frame ul{
+    padding: 0;
+    display: flex;
+    /* Porque son 3 imagenes */
+    width: 300%;
+
+    animation: slider 10s infinite alternate;
+    animation-timing-function: linear;
+}
+
+.slider-frame li{
+    width: 100%;
+    list-style: none;  
+}
+
+.slider-frame li img{
+    width: 100%;
+}
+
+@keyframes slider{
+    0%{margin-left: 0%;}
+    30%{margin-left: 0%;}
+
+    35%{margin-left: -100%;}
+    65%{margin-left: -100%;}
+
+    70%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+}
+/* Fin de slider con html y css */
+
+/* Inicio de Nuestros productos */
+#principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+#nuestro{
+	text-align:center;
+	color:black;
+	font-size: bold;
+}
+
+#nuestro h4{
+	color:#665a67;
+}
+
+.gallery-container{
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align:center;
+}
+
+/* Fin de Nuestros productos */
+
+.copy{
+    text-align: center;
+}
